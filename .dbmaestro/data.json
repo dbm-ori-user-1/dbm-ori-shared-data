@@ -65,7 +65,7 @@
                   "BranchName": "main",
                   "DatabaseConnectionDetails": {
                     "DBTypeName": "SQL Server",
-                    "Host": "T21-LFG",
+                    "Host": "localhost",
                     "AuthenticationType": 1,
                     "Username": "sa",
                     "Password": "do1NBD0OcmAl1jAcpH7iWg==",

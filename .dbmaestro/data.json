@@ -14,18 +14,12 @@
               {
                 "DatabaseId": "b0c8a7f3-7541-499b-a99e-4da484ad3e8e",
                 "DatabaseAliasName": "DB_Test7652",
-                "DatabaseConnectionDetails": {
-                  "DBTypeName": "SQL Server",
-                  "Host": "T21-LFG",
-                  "AuthenticationType": 1,
-                  "Username": "sa",
-                  "Password": "do1NBD0OcmAl1jAcpH7iWg==",
-                  "DatabaseName": "sc_user_1"
-                },
+                "DatabaseConnectionDetails": null,
                 "RepositoryDetails": {
                   "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
                   "RemoteRepositoryURL": "https://github.com/dbm-ori-user-1/dbm-sc-repo.git",
-                  "BranchName": "main"
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
                 }
               }
             ]
@@ -37,7 +31,8 @@
           "BuildMethod": 1,
           "NumberOfRevisionsInViewHistory": 50,
           "NumberOfTagsInBuildOptions": 50,
-          "BuildDeploymentScriptOnPush": false
+          "BuildDeploymentScriptOnPush": false,
+          "PreventCommitObjectWithConflict": false
         },
         "ProjectArchitecture": 1,
         "LocalDirectory": "C:\\SC_Test\\User_1\\Test_7652"
@@ -50,14 +45,40 @@
               "DatabaseId": "b0c8a7f3-7541-499b-a99e-4da484ad3e8e",
               "DatabaseAliasName": "DB_Test7652",
               "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": null,
               "RepositoryCredentials": {
                 "UserName": "dbm-ori-user-1",
                 "Password": "dfYyOcp3K0sRHHQY+XjWmw9u1ojFZbAGXWhoJgcUKRT4MMCLg/nJyaMwamy6wnta"
               }
             }
           ]
+        },
+        {
+          "UserName": "#ALL",
+          "DatabasesData": [
+            {
+              "DatabaseId": "b0c8a7f3-7541-499b-a99e-4da484ad3e8e",
+              "DatabaseAliasName": "DB_Test7652",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "Host": "T21-LFG",
+                    "AuthenticationType": 1,
+                    "Username": "sa",
+                    "Password": "do1NBD0OcmAl1jAcpH7iWg==",
+                    "DatabaseName": "sc_user_1"
+                  }
+                }
+              ],
+              "RepositoryCredentials": null
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "GlobalConfigurations": null
 }
